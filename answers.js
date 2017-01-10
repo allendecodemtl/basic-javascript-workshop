@@ -219,6 +219,11 @@ console.log(largestNumOfArray([2,33,4,10,100,55]));
 //    The filtered array should only contain the truthy values from the initial array. 
 //    Hint: there is an array method called filter that can help you with this :)
 
+function bouncer(arr) {
+  return arr.filter(function(v) { return !!v; });
+}
+
+console.log(bouncer([true, false, 1, undefined, "string", null]));
 
 
 // 17 Write a function that takes an array of numbers, and returns the sum of all the numbers in the array.
