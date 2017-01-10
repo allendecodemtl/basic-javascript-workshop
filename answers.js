@@ -137,3 +137,49 @@ printNumInWords();
 
 // 10 Write a function that uses a for loop to print the numbers from 1 to 10 inclusively, 
 //    but for each number, print it that many number of times:
+
+function printManyNumTimes(){
+    for (var i; i<11; i++){
+        
+    }
+}
+
+// 11 Write a function that takes a string, and returns the reverse of that string. For example, if you pass the function the string “hello”, it should return “olleh”. 
+//    Test your function on a few inputs, including the empty string.
+
+function reverseStr (s){
+    return s.split("").reverse().join("");
+}
+
+console.log(reverseStr("HelloWorld"));
+
+// 12 Write a function that takes a number and returns the factorial of a number. The factorial of 5 is 5x4x3x2x1. 
+//    The factorial of 0 is 1. Test your input on a few numbers, including negative numbers.
+
+function factorial(num)
+{
+    // If the number is less than 0, reject it.
+    if (num < 0) {
+        return -1;
+    }
+    // If the number is 0, its factorial is 1.
+    else if (num == 0) {
+        return 1;
+    }
+    var tmp = num;
+    while (num-- > 2) {
+        tmp *= num;
+    }
+    return tmp;
+}
+
+console.log(factorial(8));
+
+
+
+// 13 Write a function that takes a phrase as a string, and returns the longest word in that phrase. 
+//    If the phrase contains more than one such word, return the first occurrence. Test your function on a few inputs.
+
+function getLongestWord(str){
+    
+}
