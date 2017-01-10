@@ -145,9 +145,6 @@ function printManyNumTimes(){
     }
 }
 
-printManyNumTimes();
-
-
 // 11 Write a function that takes a string, and returns the reverse of that string. For example, if you pass the function the string “hello”, it should return “olleh”. 
 //    Test your function on a few inputs, including the empty string.
 
