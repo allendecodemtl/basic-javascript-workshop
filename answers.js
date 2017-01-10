@@ -153,6 +153,7 @@ function reverseStr (s){
 
 console.log(reverseStr("HelloWorld"));
 
+
 // 12 Write a function that takes a number and returns the factorial of a number. The factorial of 5 is 5x4x3x2x1. 
 //    The factorial of 0 is 1. Test your input on a few numbers, including negative numbers.
 
@@ -181,5 +182,21 @@ console.log(factorial(8));
 //    If the phrase contains more than one such word, return the first occurrence. Test your function on a few inputs.
 
 function getLongestWord(str){
-    
+    return str
+    .split(' ')
+    .sort(function(a, b) { return a.length-b.length; }) 
+    .pop();
 }
+
+console.log(getLongestWord("I am testing longest word!"));
+
+// 14 Write a function that takes a phrase, and returns the same phrase with every word capitalized. 
+//    For example, if you pass your function "hello world", it should return "Hello World" and 
+//    if you pass it "HELLO WORLD" or even "HeLLo WoRLD", it will also return "Hello World". 
+//    Test your function of a few inputs.
+
+
+
+
+// 15 Write a function that takes an array and returns the largest number of the array. 
+//    Test your function on a few inputs.
