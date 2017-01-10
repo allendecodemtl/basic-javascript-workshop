@@ -280,5 +280,21 @@ onlyInOneArray([1,2,3],[1,2,4,5]);
 
 
 
+//  Mini Challenge: write a function that takes an array and a function as arguments. 
+//  The function should return a new array that maps every element of the input array by passing it through the function you received. 
+//  You are not allowed to use Array.map for this challenge, otherwise it would be too easy :)
 
+//  ===== Work in Progress ====================
 
+function miniChallenge(arr, funct){
+    var output = [];
+    
+    for (var i=0; i< arr.length; i++){
+        
+        output[i] = funct(arr[i]);
+    }
+    
+    return output;
+}
+
+miniChallenge([1,2,3], function(number){return number + 5})
