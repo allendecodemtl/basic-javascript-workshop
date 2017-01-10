@@ -90,3 +90,50 @@ function printLoopNum (){
 }
 
 printLoopNum();
+
+// 9 Write a function that uses a for loop to print the numbers from 1 to 10 inclusively, but as words ("one", "two", ...). 
+//   As an extra challenge, try to find a solution that does not use an if/else:
+function printNumInWords(){
+    for (var i=1; i < 11; i++ ){
+            switch (i){
+            case 1:
+                console.log("One");
+                break;
+            case 2: 
+                console.log("Two");
+                break;
+            case 3: 
+                console.log("Three");
+                break;
+            case 4: 
+                console.log("Four");
+                break;
+            case 5: 
+                console.log("Five");
+                break;
+            case 6: 
+                console.log("Six");
+                break;
+            case 7: 
+                console.log("Seven");
+                break;
+            case 8: 
+                console.log("Eight");
+                break;
+            case 9: 
+                console.log("Nine");
+                break;
+            case 10: 
+                console.log("Ten");
+                break;
+            default:
+                console.log("Default");
+        }
+    }
+}
+
+printNumInWords();
+
+
+// 10 Write a function that uses a for loop to print the numbers from 1 to 10 inclusively, 
+//    but for each number, print it that many number of times:
