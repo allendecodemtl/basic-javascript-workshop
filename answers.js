@@ -249,6 +249,7 @@ function onlyInOneArray(arr1, arr2){
     var similar = [];
     var all = arr1.concat(arr2);
     var results = [];
+    var uniqueResults = [];
     
     for (var i=0; i<arr1.length; i++){
         for (var j=0; j<arr2.length; j++){
@@ -262,14 +263,17 @@ function onlyInOneArray(arr1, arr2){
     for (var i=0; i<all.length; i++){
         for (var j=0; j<similar.length; j++){
             if (similar.indexOf(all[i]) === -1) {
-                console.log(all[i] + " " + similar[j]);
+                //console.log(all[i] + " " + similar[j]);
                 results.push(all[i]);
             }
         }
     }
     
+    uniqueResults = results.filter(function(item, pos) {
+                        return results.indexOf(item) == pos;
+                    });
     
-    
+    console.log(uniqueResults);
 }
 
 onlyInOneArray([1,2,3],[1,2,4,5]);
