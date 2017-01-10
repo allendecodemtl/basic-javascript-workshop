@@ -246,13 +246,33 @@ console.log(amountTotal([1,2,3,4,5]));
 
 function onlyInOneArray(arr1, arr2){
     
+    var similar = [];
+    var all = arr1.concat(arr2);
+    var results = [];
+    
     for (var i=0; i<arr1.length; i++){
-        
-        
+        for (var j=0; j<arr2.length; j++){
+            if (arr1[i] === arr2[j]) {
+                //console.log(arr1[i] + " " + arr2[j]);
+                similar.push(arr1[i]);
+            }
+        }
     }
+    
+    for (var i=0; i<all.length; i++){
+        for (var j=0; j<similar.length; j++){
+            if (similar.indexOf(all[i]) === -1) {
+                console.log(all[i] + " " + similar[j]);
+                results.push(all[i]);
+            }
+        }
+    }
+    
+    
     
 }
 
+onlyInOneArray([1,2,3],[1,2,4,5]);
 
 
 
